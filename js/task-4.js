@@ -8,14 +8,12 @@ function handleSubmit(event) {
   const loginForm = event.target;
   result.email = loginForm.elements.email.value.trim();
   result.password = loginForm.elements.password.value.trim();
-  
+
   if (result.email === "" || result.password === "") {
-    alert ('All form fields must be filled in');
+    alert("All form fields must be filled in");
+  } else {
+    console.log(result);
   }
-  else {
-     console.log(result); 
-    }
-  
+
   loginForm.reset();
 }
-
