@@ -12,8 +12,8 @@ const containerOfBoxes = document.querySelector("#boxes");
 createBtn.addEventListener("click", createBoxes);
 destroyBtn.addEventListener("click", destroyBoxes);
 
-function createBoxes() {
-  const amount = numberInput.value;
+function createBoxes(amount) {
+  const amount = parseInt(numberInput.value);
   if (amount >= 1 && amount <= 100) {
     destroyBoxes();
     let boxSize;
